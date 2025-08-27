@@ -1,0 +1,92 @@
+/* === RESET GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BACKGROUND COM A IMAGEM === */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: url("monza2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* texto branco para boa legibilidade */
+  line-height: 1.7;
+  padding: 20px;
+  backdrop-filter: brightness(0.7); /* imagem um pouco mais escura */
+}
+
+/* === TÍTULO PRINCIPAL === */
+h1 {
+  text-align: center;
+  font-size: 3em; /* título maior */
+  margin-bottom: 40px;
+  color: #FFFFFF; /* cor amarelo dourado claro */
+  text-transform: uppercase;
+  letter-spacing: 3px; /* espaçamento maior entre letras */
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 100px; /* linha abaixo do título mais longa */
+  height: 4px;
+  background: #FFFFFF; /* mesma cor do título */
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* === SUBTÍTULOS === */
+.tittle {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 30px 0 15px;
+  color: #FFFFFF; /* amarelo dourado para subtítulos */
+}
+
+/* === PARÁGRAFOS === */
+p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8); /* fundo mais escuro para contraste */
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* === CONTAINER GERAL === */
+body {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* === BOTÃO VOLTAR === */
+.voltar-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn-voltar {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #FFFFFF; /* fundo dourado para o botão */
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  font-size: 1em;
+}
+
+.btn-voltar:hover {
+  background: #FFFFFF; /* cor mais clara de amarelo para o hover */
+  transform: scale(1.05);
+}
